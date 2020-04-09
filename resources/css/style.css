@@ -1,0 +1,341 @@
+
+/* -------------------------------------- */
+/* HEADER*/
+/*-------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    background-color: rgb(27, 21, 21);
+    color: rgba(243, 237, 237, 0.945);
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+.row
+{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* -------------------------------------- */
+/* HEADER*/
+/*-------------------------------------- */
+
+header
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.hero-text-box
+{
+    position: absolute;
+    width: 1140px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+
+.logo
+{
+    height: 100px;
+    width:auto;
+    float:left;
+    margin-top: 20px;
+}
+
+
+/* -------------------------------------- */
+/* BUTTON */
+/*-------------------------------------- */
+
+.btn:link,.btn:visited
+{
+    display: inline-block;
+    border: 1px solid #E16E23;
+    border-radius: 100px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color:#fff;
+    transition: background-color 0.2s;
+    background-color: #E16E23;
+}
+
+.btn:hover,.btn:active
+{
+    background-color:rgb(243, 102, 8) ;
+}
+
+
+
+
+/* -------------------------------------- */
+/* NAVIGATION  */
+/*-------------------------------------- */
+
+
+.navigation
+{
+    float: right;
+    margin-top: 20px;
+}
+
+.navigation li
+{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+
+}
+
+.navigation li a:link,
+.navigation li a:visited
+{
+    padding: 8px 0;
+    text-decoration: none;
+    color: #fff;
+    border-bottom:1px solid transparent ;
+}
+
+.navigation li a:hover,
+.navigation li a:active
+{
+    border-bottom:2px solid #E16E23;
+}
+
+section
+{
+    padding: 80px 0;
+}
+
+
+/* -------------------------------------- */
+/* HEADING  */
+/*-------------------------------------- */
+
+h1
+{
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+h2::after
+{
+    display: block;
+    background-color: tomato;
+    content: " ";
+    height: 2px;
+    width:400px;
+    margin: 0 auto;
+}
+
+h3
+{
+    font-size: 115%;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+/* -------------------------------------- */
+/* GET FOOD FAST*/
+/*-------------------------------------- */
+
+
+.long-copy
+{
+    line-height: 145%;
+    width: 70%;
+    margin: 0 15%;
+}
+
+.box
+{
+    line-height: 145%;
+    padding: 15px;
+    border: 1px solid #E16E23;
+    height: 400px;
+}
+
+.icons
+{
+    font-size: 400%;
+    display: block;
+    color: #E16E23;
+}
+
+/* -------------------------------------- */
+/* MEALS SECTION*/
+/*-------------------------------------- */
+
+
+.section-meals
+{
+    padding: 0;
+}
+
+.meals-photo
+{
+    width:100%;
+    padding: 0;
+}
+
+.meals-photo li
+{
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.pics
+{
+    width:100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.pics img
+{
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s,opacity 0.5s;
+}
+
+.pics img:hover
+{
+    opacity: 1;
+    transform: scale(1);
+}
+ 
+
+/* -------------------------------------- */
+/* HOW DOES IT WORK  */
+/*-------------------------------------- */
+
+.app-section
+{
+    padding:80px 0;
+    background-color: rgb(46, 44, 44);
+}
+
+.step-box 
+{
+    margin-top: 25px;
+    display: inline-block;
+}
+.step-box:first-child
+{
+    text-align: right;
+    padding-right: 3%;
+}
+
+.step-box:last-child
+{
+    padding-left: 3%;
+}
+
+.app-iPhone
+{
+    width: 40%;
+}
+
+.steps
+{
+    
+    margin-bottom: 20px;
+}
+.steps div
+{
+    color: #E16E23;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 9px;
+    display: inline block;
+    float: left;
+    margin-right: 10px;
+}
+
+.steps:last-of-type
+{
+    margin-bottom: 80px;
+}
+
+
+.btn-app img
+{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+
+
+/* -------------------------------------- */
+/* CLEARING FLOATING ELEMENTS  */
+/*-------------------------------------- */
+
+.clearfix {zoom: 1;}
+.clearfix:after
+{
+    content:'.' ;
+    clear: both;
+    display: block;
+    height: 0;
+    visibility:hidden;
+}
+
+
+/* -------------------------------------- */
+/* CITIES  */
+/*-------------------------------------- */
+
+
+
+.box2 img
+{
+    width: 100%;
+    height: auto;
+}
+
+.city
+{
+    margin-bottom: 20px;
+}
+
+.small
+{
+    margin-right: 5px;
+    color: chocolate;
+}
+
+.customer-testimonial
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/back-customers.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
